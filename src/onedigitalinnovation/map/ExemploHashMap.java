@@ -61,8 +61,15 @@ public class ExemploHashMap {
         //Verifica se o mapa contém a chave Estados Unidos
         System.out.println(campeoesMundialFifa.containsKey("Estados Unidos"));
 
+        //Verifica se o mapa contém o valor 5
         System.out.println(campeoesMundialFifa.containsValue(5));
 
+        //Verifica o tamanho antes e depois de limpar o mapa
+        System.out.println(campeoesMundialFifa.size());
+
+        campeoesMundialFifa.clear();
+
+        System.out.println(campeoesMundialFifa.size());
 
     }
 
