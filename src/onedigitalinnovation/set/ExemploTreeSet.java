@@ -7,6 +7,7 @@ import java.util.TreeSet;
 public class ExemploTreeSet {
 
 
+
     private static Object HashSet;
 
     public static void main(String[] args) {
@@ -55,7 +56,6 @@ public class ExemploTreeSet {
         }
 
         for(String capital: treeCapitais){
-
             String capítal ="";
             System.out.println(capítal);
         }

@@ -9,6 +9,9 @@ public class ExemploLinkedHashSet {
 
     private static Object HashSet;
 
+    //Rapida Leitura/
+    //Para escrita haverá problema de desempenho
+
     public static void main(String[] args) {
         LinkedHashSet<Integer> sequenciaNumerica = new LinkedHashSet<>();
 
