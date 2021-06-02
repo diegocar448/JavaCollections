@@ -7,13 +7,13 @@ public class ExemploOptional {
 
         Optional<String> optionalString = Optional.of("Valor opcional");
 
-        if (optionalString.isPresent()){
-            System.out.println(optionalString.get();
-        }
+        /*if (optionalString.isPresent()){
+            System.out.println(optionalString.get());
+        }*/
 
 
         System.out.println(optionalString.isPresent());
-        System.out.println(optionalString.isEmpty());
+        //System.out.println(optionalString.isEmpty());
 
         optionalString.ifPresentOrElse(System.out::println, () -> System.out.println("Valor não esta presente"));
 
