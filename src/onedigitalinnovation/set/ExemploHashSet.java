@@ -1,14 +1,18 @@
 package onedigitalinnovation.set;
 
+import java.text.DecimalFormat;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
+import java.util.Scanner;
+import java.lang.Integer;
+import java.lang.String;
 
 public class ExemploHashSet {
 
     private static Object HashSet;
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         Set<Double> notasAlunos =  new HashSet<>();
 
         //Adicionar as notas no set
@@ -47,5 +51,61 @@ public class ExemploHashSet {
         System.out.println(notasAlunos.isEmpty());
 
 
-    }
+    }*/
+
+
+
+
+
+
+
+
+
+
+        import java.io.IOException;
+import java.util.Scanner;
+import java.text.DecimalFormat;
+
+        /*
+        * Desafio 1
+        * */
+
+
+        public static void main(String[] args) throws IOException {
+
+            Scanner input = new Scanner(System.in);
+            DecimalFormat df = new DecimalFormat("0.000");
+            int t, vm, distancia;
+            double litros;
+
+            t = input.nextInt();
+            vm = input.nextInt();
+
+            distancia = t * vm;
+            litros = distancia * 1 / 12.0;
+
+            System.out.println(df.format(litros));
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
