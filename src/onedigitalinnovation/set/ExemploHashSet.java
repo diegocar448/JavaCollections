@@ -8,6 +8,11 @@ import java.util.Scanner;
 import java.lang.Integer;
 import java.lang.String;
 
+
+import java.io.IOException;
+import java.util.Scanner;
+import java.text.DecimalFormat;
+
 public class ExemploHashSet {
 
     private static Object HashSet;
@@ -62,16 +67,12 @@ public class ExemploHashSet {
 
 
 
-        import java.io.IOException;
-import java.util.Scanner;
-import java.text.DecimalFormat;
+
 
         /*
         * Desafio 1
         * */
-
-
-        public static void main(String[] args) throws IOException {
+        /*public static void main(String[] args) throws IOException {
 
             Scanner input = new Scanner(System.in);
             DecimalFormat df = new DecimalFormat("0.000");
@@ -85,7 +86,25 @@ import java.text.DecimalFormat;
             litros = distancia * 1 / 12.0;
 
             System.out.println(df.format(litros));
+        }*/
 
+
+        /*
+         * Desafio 2
+         * */
+        public static void main(String[] args){
+            Scanner input = new Scanner(System.in);
+
+            //declare suas variaveis do tipo double
+            double area, valor;
+
+            //continue a solucao
+            valor = input.nextDouble();
+            //valor = 100.64;
+
+            area = 3.14159 * (Math.pow(  valor  ,2));
+
+            System.out.printf("A=%.4f\n", area);
         }
 
 
