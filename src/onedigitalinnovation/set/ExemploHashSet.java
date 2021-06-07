@@ -2,6 +2,7 @@ package onedigitalinnovation.set;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.lang.reflect.Array;
 import java.text.DecimalFormat;
 import java.util.*;
 import java.lang.Integer;
@@ -125,6 +126,58 @@ public class ExemploHashSet {
         System.out.println("NUMBER = " + valor1);
         System.out.printf("SALARY = U$ %.2f", salary);
     }*/
+
+
+
+    /*
+    * Desafio 4
+    * */
+    /*public static void main(String[] args) throws IOException {
+        Scanner leitor = new Scanner(System.in);
+        //continue a solucao
+        int valor1 = leitor.nextInt();
+        int valor2 = leitor.nextInt();
+        //if (valor1 % 2 == 0 && valor2 % 2 == 0) {
+        if ((valor1 % valor2 == 0) | (valor2 % valor1 == 0)) {
+            System.out.println("Sao Multiplos");
+        } else {
+            System.out.println("Não Sao Multiplos");
+        }
+    }*/
+
+
+    /*
+    Desafio 5
+    * */
+    public static void main(String[] args) throws IOException {
+        Scanner leitor = new Scanner(System.in);
+        //declare suas variaveis corretamente
+        String linha;
+        int pos, neg, par, impar, num;
+
+
+        pos = neg = par = impar = 0;
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        for (int i = 0; i < 5; i++) {
+            linha = br.readLine();
+            num = Integer.parseInt(linha);
+
+            if (num % 2 == 0) {
+                par++;
+            } else {
+                impar++;
+            }
+
+            if (num > 0) pos++;
+            if (num < 0) neg++;
+        }
+
+        System.out.println("" + par +" valor(es) par(es)");
+        System.out.println("" + impar + " valor(es) impar(es)");
+        System.out.println("" + pos + " valor(es) positivo(s)");
+        System.out.println("" + neg + " valor(es) negativo(s)");
+    }
 
 
 
