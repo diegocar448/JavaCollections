@@ -1,10 +1,9 @@
 package onedigitalinnovation.set;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.text.DecimalFormat;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
-import java.util.Scanner;
+import java.util.*;
 import java.lang.Integer;
 import java.lang.String;
 
@@ -92,7 +91,7 @@ public class ExemploHashSet {
         /*
          * Desafio 2
          * */
-        public static void main(String[] args){
+        /*public static void main(String[] args){
             Scanner input = new Scanner(System.in);
 
             //declare suas variaveis do tipo double
@@ -105,7 +104,27 @@ public class ExemploHashSet {
             area = 3.14159 * (Math.pow(  valor  ,2));
 
             System.out.printf("A=%.4f\n", area);
-        }
+        }*/
+
+
+    /*
+     * Desafio 3
+     * */
+    /*public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        int valor1 = Integer.parseInt(st.nextToken());
+
+        st = new StringTokenizer(br.readLine());
+        int valor2 = Integer.parseInt(st.nextToken());
+
+        st = new StringTokenizer(br.readLine());
+        double valor3 = Double.parseDouble(st.nextToken());
+
+        double salary = valor2 * valor3; // Altere o valor da variável com o cálculo esperado
+        System.out.println("NUMBER = " + valor1);
+        System.out.printf("SALARY = U$ %.2f", salary);
+    }*/
 
 
 
