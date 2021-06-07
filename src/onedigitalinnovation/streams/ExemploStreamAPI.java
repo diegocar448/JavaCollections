@@ -53,6 +53,32 @@ public class ExemploStreamAPI {
         System.out.println("Retorna os elementos novamente: ");
         estudantes.stream().forEach(System.out::println);
 
+        //Retorna true se todos os elementos possuem a letra W no nome
+        System.out.println("Todos os elemetos têm o W no nome? " + estudantes.stream().allMatch((elemento) -> elemento.contains("W")));
+
+        //Retorna true se alguns dos elementos possuem a letra minuscula no nome
+        System.out.println("Tem algum elemento com a minuscula no nome? " + estudantes.stream().anyMatch((elemento) -> elemento.contains("a")));
+
+        //Retorna true se nenhum elemento possue a letra minuscula no nome
+        System.out.println("Não tem nehum elemento com a minuscula no nome? "+ estudantes.stream().noneMatch((elemento) ->elemento.contains("a")));
+
+        //Retorna o primeiro elemento da coleção, se existir exibe no console
+        System.out.println("Retorna o primeiro elemento da coleção: ");
+        estudantes.stream().findFirst().ifPresent(System.out::println);
+
+        //Exemplo de operação encadeada
+        System.out.println("Operação encadeada");
+        System.out.println(estudantes.stream()
+                .peek(System.out::println)
+                .map(estudante ->
+                        estudante.concat(" - ").concat(String.valueOf(estudante.length())))
+                .peek(System.out::println)
+                .filter((estudante) ->
+                        estudante.toLowerCase().contains("r"))
+                //.collect(Collectors.toList()));
+                //.collect(Collectors.joining(", ")));
+                //.collect(Collectors.toSet()));
+                .collect(Collectors.groupingBy(estudante -> estudante.substring(estudante.indexOf("-") + 1))));
 
     }
 }
